@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,24 +12,21 @@
         }
 
         body {
-            font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif;
             background: #ffffff;
             color: #0a0f2c;
             overflow-x: hidden;
             line-height: 1.4;
         }
 
-        /* modern font import */
         @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap');
 
         .page-wrapper {
             max-width: 1440px;
             margin: 0 auto;
             background: #ffffff;
-            box-shadow: 0 0 0 1px rgba(0,0,0,0.02);
         }
 
-        /* -------------------- HEADER / NAVIGATION (desktop refined) ------------------ */
         .site-header {
             display: flex;
             align-items: center;
@@ -38,7 +34,6 @@
             padding: 20px 56px;
             background: #ffffff;
             border-bottom: 1px solid #eff3fc;
-            flex-wrap: wrap;
         }
 
         .brand {
@@ -53,24 +48,16 @@
             height: 36px;
             background: linear-gradient(135deg, #4356d6 0%, #6c7ee0 100%);
             border-radius: 12px;
-            display: inline-block;
-            position: relative;
-            box-shadow: 0 6px 12px -6px rgba(67,86,214,0.25);
-        }
-
-        .brand-icon::after {
-            content: "⚖️";
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            color: white;
         }
 
         .brand-title {
             font-size: 22px;
             font-weight: 700;
-            letter-spacing: -0.3px;
             color: #111827;
         }
 
@@ -123,16 +110,10 @@
             color: #4356d6;
         }
 
-        .btn-secondary:hover {
-            background: #f0f4ff;
-            border-color: #4356d6;
-        }
-
         .header-cta {
             margin-left: 8px;
         }
 
-        /* ========== HAMBURGER MENU STYLES (Mobile Only) ========== */
         .hamburger-btn {
             display: none;
             flex-direction: column;
@@ -149,10 +130,8 @@
             height: 2.5px;
             background-color: #1f2a44;
             border-radius: 4px;
-            transition: all 0.2s ease;
         }
 
-        /* Mobile Navigation Overlay */
         .mobile-nav-overlay {
             position: fixed;
             top: 0;
@@ -171,7 +150,6 @@
             opacity: 1;
         }
 
-        /* Mobile Menu Panel */
         .mobile-menu-panel {
             position: fixed;
             top: 0;
@@ -180,12 +158,9 @@
             max-width: 85%;
             height: 100%;
             background: #fafbff;
-            box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
             z-index: 2001;
             transform: translateX(-100%);
             transition: transform 0.3s ease;
-            display: flex;
-            flex-direction: column;
             overflow-y: auto;
         }
 
@@ -199,7 +174,6 @@
             justify-content: space-between;
             padding: 18px 20px;
             border-bottom: 1px solid #eef2ff;
-            background: #fafbff;
         }
 
         .mobile-logo {
@@ -219,22 +193,11 @@
             font-size: 18px;
         }
 
-        .mobile-logo-text {
-            font-size: 20px;
-            font-weight: 700;
-            color: #111827;
-        }
-
         .close-menu {
             font-size: 32px;
             cursor: pointer;
             color: #2c3e66;
             line-height: 1;
-            transition: color 0.2s;
-        }
-
-        .close-menu:hover {
-            color: #4356d6;
         }
 
         .mobile-nav-links {
@@ -251,7 +214,6 @@
             color: #282828;
             padding: 12px 16px;
             border-radius: 12px;
-            transition: background 0.2s, color 0.2s;
             display: flex;
             align-items: center;
             gap: 16px;
@@ -262,10 +224,6 @@
             color: #4356d6;
         }
 
-        .mobile-nav-links a .nav-icon {
-            font-size: 22px;
-        }
-
         .mobile-cta {
             margin: 20px 20px 30px;
             background: #4356d6;
@@ -273,7 +231,6 @@
             padding: 14px;
             text-align: center;
             cursor: pointer;
-            transition: background 0.2s;
         }
 
         .mobile-cta a {
@@ -284,11 +241,6 @@
             display: block;
         }
 
-        .mobile-cta:hover {
-            background: #2c3ba0;
-        }
-
-        /* -------------------- HERO SECTION ------------------ */
         .hero {
             padding: 48px 56px 20px 56px;
         }
@@ -305,12 +257,11 @@
         }
 
         .hero-copy h1 {
-            font-size: 64px;
-            font-weight:BOLD;
+            font-size: 54px;
+            font-weight: 800;
             line-height: 1.2;
             letter-spacing: -0.02em;
             margin-bottom: 24px;
-            color: #0a0f2c;
         }
 
         .highlight {
@@ -336,7 +287,6 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            color: #1f2a44;
         }
 
         .hero-features li::before {
@@ -350,7 +300,6 @@
             color: #4356d6;
             border-radius: 30px;
             font-weight: 700;
-            font-size: 14px;
         }
 
         .hero-actions {
@@ -361,20 +310,17 @@
 
         .hero-visual {
             flex: 1;
-            position: relative;
         }
 
         .hero-visual img {
             width: 100%;
             border-radius: 28px;
             display: block;
-            background: #eef2ff;
             object-fit: cover;
             aspect-ratio: 1.2 / 1;
             box-shadow: 0 12px 18px -8px rgba(0,0,0,0.05);
         }
 
-        /* -------------------- WHY COMPLIANCE SECTION ------------------ */
         .why-section {
             margin-top: 60px;
             padding: 20px 0 70px 0;
@@ -394,9 +340,7 @@
             font-size: 44px;
             font-weight: 700;
             line-height: 1.25;
-            letter-spacing: -0.02em;
             margin-bottom: 28px;
-            color: #0a0f2c;
         }
 
         .why-intro {
@@ -424,9 +368,6 @@
 
         .why-details {
             flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 28px;
         }
 
         .why-cards {
@@ -448,9 +389,7 @@
 
         .why-card:hover {
             background: #ffffff;
-            border-color: #cdd6ff;
             transform: translateX(4px);
-            box-shadow: 0 18px 28px -16px rgba(67,86,214,0.12);
         }
 
         .card-icon {
@@ -469,7 +408,6 @@
             font-size: 24px;
             font-weight: 700;
             margin-bottom: 12px;
-            color: #0a0f2c;
         }
 
         .why-card p {
@@ -478,232 +416,40 @@
             color: #334155;
         }
 
-        /* ==================== FULL RESPONSIVE BREAKPOINTS ==================== */
-        
-        /* Tablet Landscape & Medium Desktop */
-        @media (max-width: 1200px) {
-            .site-header, .hero {
-                padding-left: 40px;
-                padding-right: 40px;
-            }
-            .hero-copy h1 {
-                font-size: 46px;
-            }
-            .why-copy h2 {
-                font-size: 38px;
-            }
-            .why-grid {
-                gap: 48px;
-            }
-        }
-
-        /* Tablet Portrait */
         @media (max-width: 1024px) {
-            .hero-container {
+            .hero-container, .why-grid {
                 flex-direction: column;
-                gap: 48px;
-            }
-            .why-grid {
-                flex-direction: column;
-            }
-            .why-copy h2 {
-                font-size: 40px;
             }
             .hero-copy h1 {
                 font-size: 44px;
             }
-            .hero-text {
-                max-width: 100%;
-            }
-            .hero-visual img {
-                max-width: 500px;
-                margin: 0 auto;
-            }
-            .hero-visual {
-                display: flex;
-                justify-content: center;
-            }
         }
 
-        /* Mobile & Tablet Nav Breakpoint - show hamburger */
         @media (max-width: 850px) {
-            .site-nav {
-                display: none;
-            }
-            .header-cta {
+            .site-nav, .header-cta {
                 display: none;
             }
             .hamburger-btn {
                 display: flex;
             }
-            .site-header {
+            .site-header, .hero {
                 padding: 16px 24px;
             }
-            .hero {
-                padding: 32px 24px 20px 24px;
-            }
-            .hero-container {
-                margin-bottom: 60px;
-                gap: 40px;
-            }
             .hero-copy h1 {
-                font-size: 38px;
-            }
-            .hero-text {
-                font-size: 16px;
-            }
-            .hero-features li {
-                font-size: 15px;
+                font-size: 36px;
             }
             .why-copy h2 {
                 font-size: 32px;
             }
-            .why-intro {
-                font-size: 16px;
-                margin-bottom: 30px;
-            }
-            .why-card {
-                padding: 20px;
-                gap: 16px;
-            }
-            .why-card h3 {
-                font-size: 20px;
-            }
-            .why-card p {
-                font-size: 15px;
-            }
-            .card-icon {
-                width: 48px;
-                height: 48px;
-                font-size: 26px;
-            }
         }
 
-        /* Small Mobile */
         @media (max-width: 550px) {
-            .site-header {
-                padding: 12px 20px;
-            }
-            .brand-title {
-                font-size: 18px;
-            }
-            .brand-icon {
-                width: 32px;
-                height: 32px;
-            }
-            .brand-icon::after {
-                font-size: 16px;
-            }
-            .hero {
-                padding: 24px 20px 16px 20px;
-            }
-            .hero-copy h1 {
-                font-size: 30px;
-                margin-bottom: 16px;
-            }
-            .hero-text {
-                font-size: 15px;
-                margin-bottom: 20px;
-            }
-            .hero-features li {
-                font-size: 14px;
-                margin-bottom: 10px;
-            }
             .hero-actions {
                 flex-direction: column;
-                gap: 12px;
-            }
-            .btn {
-                width: 100%;
-                justify-content: center;
-                padding: 12px 20px;
-            }
-            .hero-container {
-                margin-bottom: 40px;
-                gap: 32px;
-            }
-            .why-section {
-                margin-top: 20px;
-                padding: 0 0 50px 0;
-            }
-            .why-copy h2 {
-                font-size: 28px;
-                margin-bottom: 20px;
-            }
-            .why-intro {
-                font-size: 15px;
-                margin-bottom: 24px;
             }
             .why-card {
-                padding: 16px;
-                gap: 12px;
                 flex-direction: column;
             }
-            .card-icon {
-                width: 44px;
-                height: 44px;
-                font-size: 24px;
-            }
-            .why-card h3 {
-                font-size: 18px;
-                margin-bottom: 6px;
-            }
-            .why-card p {
-                font-size: 14px;
-            }
-            .why-cards {
-                gap: 16px;
-            }
-            .why-image {
-                padding: 16px;
-            }
-            .why-image div {
-                padding: 16px 0 !important;
-            }
-            .mobile-menu-panel {
-                width: 260px;
-            }
-            .mobile-nav-links a {
-                font-size: 16px;
-                padding: 10px 14px;
-            }
-            .mobile-logo-text {
-                font-size: 18px;
-            }
-        }
-
-        /* Extra small devices */
-        @media (max-width: 380px) {
-            .hero-copy h1 {
-                font-size: 26px;
-            }
-            .why-copy h2 {
-                font-size: 24px;
-            }
-            .site-header {
-                padding: 10px 16px;
-            }
-            .hero {
-                padding: 20px 16px;
-            }
-        }
-
-        /* Image fallback styling */
-        .hero-visual img {
-            background: linear-gradient(125deg, #e6edff, #d9e2fc);
-            min-height: 200px;
-            object-fit: cover;
-        }
-        
-        .why-image img {
-            background: #eef2ff;
-            min-height: 150px;
-            object-fit: contain;
-        }
-
-        /* Utility */
-        .why-card .card-icon {
-            flex-shrink: 0;
         }
     </style>
 </head>
@@ -711,10 +457,10 @@
 <div class="page-wrapper">
     <header class="site-header">
         <a class="brand" href="#">
-            <div class="brand-icon"></div>
+            <div class="brand-icon">⚖️</div>
             <span class="brand-title">Logo</span>
         </a>
-        <nav class="site-nav" aria-label="Primary navigation">
+        <nav class="site-nav">
             <a href="#">Home</a>
             <a href="#">About Us</a>
             <a href="#">Our Services</a>
@@ -723,16 +469,11 @@
             <a href="#">Contact</a>
         </nav>
         <a href="#" class="btn btn-primary header-cta">Contact Us</a>
-        
-        <!-- HAMBURGER BUTTON (mobile only) -->
-        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="hamburger-btn" id="hamburgerBtn">
+            <span></span><span></span><span></span>
         </button>
     </header>
 
-    <!-- MOBILE NAVIGATION OVERLAY & PANEL -->
     <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
     <div class="mobile-menu-panel" id="mobileMenuPanel">
         <div class="mobile-menu-header">
@@ -743,12 +484,12 @@
             <div class="close-menu" id="closeMenuBtn">×</div>
         </div>
         <div class="mobile-nav-links">
-            <a href="#"><span class="nav-icon">🏠</span> Home</a>
-            <a href="#"><span class="nav-icon">👥</span> About Us</a>
-            <a href="#"><span class="nav-icon">📊</span> Our Services</a>
-            <a href="#"><span class="nav-icon">💰</span> Pricing</a>
-            <a href="#"><span class="nav-icon">❓</span> FAQ</a>
-            <a href="#"><span class="nav-icon">📞</span> Contact</a>
+            <a href="#">🏠 Home</a>
+            <a href="#">👥 About Us</a>
+            <a href="#">📊 Our Services</a>
+            <a href="#">💰 Pricing</a>
+            <a href="#">❓ FAQ</a>
+            <a href="#">📞 Contact</a>
         </div>
         <div class="mobile-cta">
             <a href="#">Contact Us</a>
@@ -756,21 +497,14 @@
     </div>
 
     <main class="hero">
-        <!-- Hero section -->
         <div class="hero-container">
             <div class="hero-copy">
-                <h1>
-                    Simplifying <span class="highlight">Compliance</span><br> For Research Analysts
-                </h1>
-                <p class="hero-text">
-                    Stay focused on your insights—we'll handle the compliance. Our expert
-                    solutions ensure your research practices meet every regulatory requirement
-                    with confidence and ease.
-                </p>
+                <h1>Simplifying <span class="highlight">Compliance</span><br>For Research Analysts</h1>
+                <p class="hero-text">Stay focused on your insights—we'll handle the compliance. Our expert solutions ensure your research practices meet every regulatory requirement with confidence and ease.</p>
                 <ul class="hero-features">
                     <li>End-to-end compliance support</li>
                     <li>Regulatory filings made simple</li>
-                    <li>Tailored solutions for independent analysts &amp; firms</li>
+                    <li>Tailored solutions for independent analysts & firms</li>
                 </ul>
                 <div class="hero-actions">
                     <a href="#" class="btn btn-primary">Get Started</a>
@@ -778,33 +512,24 @@
                 </div>
             </div>
             <div class="hero-visual">
+                <!-- Replace with actual 3.jpeg when you upload it -->
                 <img src="3.jpeg" alt="Compliance illustration">
             </div>
         </div>
 
-        <!-- WHY COMPLIANCE MATTERS section -->
         <section class="why-section">
             <div class="why-grid">
                 <div class="why-copy">
-                    <h2>
-                        Why <span class="highlight">Compliance Matters</span><br>for Research Analysts
-                    </h2>
-                    
+                    <h2>Why <span class="highlight">Compliance Matters</span><br>for Research Analysts</h2>
                     <div class="why-image">
-                        <div style="width:100%; text-align:center; padding: 32px 0;">
-                           <img src="2.jpeg" alt="Compliance shield">
-                            <p style="color:#4356d6; margin-top: 12px; font-weight:500;">Proactive Compliance Shield</p>
-                        </div>
+                        <!-- Replace with actual 2.jpeg when you upload it -->
+                        <img src="2.jpeg" alt="Compliance shield">
+                        <p style="color:#4356d6; margin-top: 12px; font-weight:500;">Proactive Compliance Shield</p>
                     </div>
                 </div>
                 <div class="why-details">
+                    <p class="why-intro">In today's regulatory environment, even a small oversight can lead to penalties, reputational risks, and loss of client trust. We help research analysts and firms navigate complex compliance requirements so they can focus on delivering high-quality research without worry.</p>
                     <div class="why-cards">
-                      <p class="why-intro">
-                        In today's regulatory environment, even a small oversight can lead to penalties, reputational risks, 
-                        and loss of client trust. We help research analysts and firms navigate complex compliance requirements 
-                        so they can focus on delivering high-quality research without worry.
-                    </p>
-                        <!-- Card 1: Regulatory Clarity -->
                         <div class="why-card">
                             <div class="card-icon">⚖️</div>
                             <div>
@@ -812,7 +537,6 @@
                                 <p>We decode complex compliance rules into simple, actionable steps.</p>
                             </div>
                         </div>
-                        <!-- Card 2: Hassle-Free Filings Clarity -->
                         <div class="why-card">
                             <div class="card-icon">📑</div>
                             <div>
@@ -820,7 +544,6 @@
                                 <p>From registration to ongoing reporting—we manage it end-to-end.</p>
                             </div>
                         </div>
-                        <!-- Card 3: Risk Protection -->
                         <div class="why-card">
                             <div class="card-icon">🛡️</div>
                             <div>
@@ -836,81 +559,27 @@
 </div>
 
 <script>
-    // Hamburger menu functionality - fully responsive with touch support
-    (function() {
-        const hamburgerBtn = document.getElementById('hamburgerBtn');
-        const overlay = document.getElementById('mobileNavOverlay');
-        const panel = document.getElementById('mobileMenuPanel');
-        const closeBtn = document.getElementById('closeMenuBtn');
-        
-        function openMenu() {
-            if (overlay && panel) {
-                overlay.classList.add('active');
-                panel.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
-        }
-        
-        function closeMenu() {
-            if (overlay && panel) {
-                overlay.classList.remove('active');
-                panel.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        }
-        
-        if (hamburgerBtn) {
-            hamburgerBtn.addEventListener('click', openMenu);
-            // Touch device support
-            hamburgerBtn.addEventListener('touchstart', function(e) {
-                e.preventDefault();
-                openMenu();
-            });
-        }
-        
-        if (closeBtn) {
-            closeBtn.addEventListener('click', closeMenu);
-            closeBtn.addEventListener('touchstart', function(e) {
-                e.preventDefault();
-                closeMenu();
-            });
-        }
-        
-        if (overlay) {
-            overlay.addEventListener('click', closeMenu);
-        }
-        
-        // Close menu when clicking on any mobile nav link
-        const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', closeMenu);
-        });
-        
-        // Close menu when clicking mobile CTA
-        const mobileCta = document.querySelector('.mobile-cta');
-        if (mobileCta) {
-            mobileCta.addEventListener('click', closeMenu);
-        }
-        
-        // Prevent clicks inside panel from closing the menu
-        if (panel) {
-            panel.addEventListener('click', function(e) {
-                e.stopPropagation();
-            });
-        }
-        
-        // Handle window resize - close menu if switching from mobile to desktop
-        let resizeTimer;
-        window.addEventListener('resize', function() {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(function() {
-                if (window.innerWidth > 850) {
-                    closeMenu();
-                }
-            }, 250);
-        });
-    })();
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const panel = document.getElementById('mobileMenuPanel');
+    const closeBtn = document.getElementById('closeMenuBtn');
+
+    function openMenu() {
+        overlay.classList.add('active');
+        panel.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        overlay.classList.remove('active');
+        panel.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay) overlay.addEventListener('click', closeMenu);
+    if (panel) panel.addEventListener('click', (e) => e.stopPropagation());
 </script>
 </body>
 </html>
-```
