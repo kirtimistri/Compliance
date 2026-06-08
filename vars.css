@@ -1,0 +1,98 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  /* Fonts */
+  --des-h1-heading-font-family: Roboto-Bold, sans-serif;
+  --des-h1-heading-font-size: 64px;
+  --des-h1-heading-line-height: 85px;
+  --des-h1-heading-font-weight: 700;
+  --des-h1-heading-font-style: normal;
+  --des-h2-heading-font-family: Roboto-SemiBold, sans-serif;
+  --des-h2-heading-font-size: 48px;
+  --des-h2-heading-line-height: 70px;
+  --des-h2-heading-font-weight: 600;
+  --des-h2-heading-font-style: normal;
+  --des-large-title-font-family: Roboto-SemiBold, sans-serif;
+  --des-large-title-font-size: 24px;
+  --des-large-title-line-height: 32px;
+  --des-large-title-font-weight: 600;
+  --des-large-title-font-style: normal;
+  --des-title-font-family: Roboto-Medium, sans-serif;
+  --des-title-font-size: 20px;
+  --des-title-line-height: normal;
+  --des-title-font-weight: 500;
+  --des-title-font-style: normal;
+  --des-body-medium-font-family: Roboto-Medium, sans-serif;
+  --des-body-medium-font-size: 18px;
+  --des-body-medium-line-height: normal;
+  --des-body-medium-font-weight: 500;
+  --des-body-medium-font-style: normal;
+  --des-body-regular-font-family: Roboto-Regular, sans-serif;
+  --des-body-regular-font-size: 18px;
+  --des-body-regular-line-height: 32px;
+  --des-body-regular-font-weight: 400;
+  --des-body-regular-font-style: normal;
+  --mo-h1-heading-font-family: Roboto-Bold, sans-serif;
+  --mo-h1-heading-font-size: 38px;
+  --mo-h1-heading-line-height: 48px;
+  --mo-h1-heading-font-weight: 700;
+  --mo-h1-heading-font-style: normal;
+  --mo-h2-heading-font-family: Roboto-SemiBold, sans-serif;
+  --mo-h2-heading-font-size: 34px;
+  --mo-h2-heading-line-height: 48px;
+  --mo-h2-heading-font-weight: 600;
+  --mo-h2-heading-font-style: normal;
+  --mo-large-title-font-family: Roboto-SemiBold, sans-serif;
+  --mo-large-title-font-size: 22px;
+  --mo-large-title-line-height: 32px;
+  --mo-large-title-font-weight: 600;
+  --mo-large-title-font-style: normal;
+  --mo-title-font-family: Roboto-Medium, sans-serif;
+  --mo-title-font-size: 19px;
+  --mo-title-line-height: normal;
+  --mo-title-font-weight: 500;
+  --mo-title-font-style: normal;
+  --mo-body-medium-font-family: Roboto-Medium, sans-serif;
+  --mo-body-medium-font-size: 18px;
+  --mo-body-medium-line-height: normal;
+  --mo-body-medium-font-weight: 500;
+  --mo-body-medium-font-style: normal;
+  --mo-body-regular-font-family: Roboto-Regular, sans-serif;
+  --mo-body-regular-font-size: 18px;
+  --mo-body-regular-line-height: 32px;
+  --mo-body-regular-font-weight: 400;
+  --mo-body-regular-font-style: normal;
+  --ta-h1-heading-font-family: Roboto-Bold, sans-serif;
+  --ta-h1-heading-font-size: 54px;
+  --ta-h1-heading-line-height: 75px;
+  --ta-h1-heading-font-weight: 700;
+  --ta-h1-heading-font-style: normal;
+  --ta-h2-heading-font-family: Roboto-SemiBold, sans-serif;
+  --ta-h2-heading-font-size: 46px;
+  --ta-h2-heading-line-height: 60px;
+  --ta-h2-heading-font-weight: 600;
+  --ta-h2-heading-font-style: normal;
+  --ta-large-title-font-family: Roboto-SemiBold, sans-serif;
+  --ta-large-title-font-size: 24px;
+  --ta-large-title-line-height: 32px;
+  --ta-large-title-font-weight: 600;
+  --ta-large-title-font-style: normal;
+  --ta-title-font-family: Roboto-Medium, sans-serif;
+  --ta-title-font-size: 20px;
+  --ta-title-line-height: normal;
+  --ta-title-font-weight: 500;
+  --ta-title-font-style: normal;
+  --ta-body-medium-font-family: Roboto-Medium, sans-serif;
+  --ta-body-medium-font-size: 18px;
+  --ta-body-medium-line-height: normal;
+  --ta-body-medium-font-weight: 500;
+  --ta-body-medium-font-style: normal;
+  --ta-body-regular-font-family: Roboto-Regular, sans-serif;
+  --ta-body-regular-font-size: 18px;
+  --ta-body-regular-line-height: 32px;
+  --ta-body-regular-font-weight: 400;
+  --ta-body-regular-font-style: normal;
+
+  /* Effects */
+}
+/* Figma Color Variables of your File */
